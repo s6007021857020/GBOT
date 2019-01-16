@@ -27,7 +27,7 @@ from flask import Flask, request, abort
 
 app = Flask(__name__)
 
-# http://127.0.0.1:5000/?msg=asd
+# url http://127.0.0.1:5000/?msg=asd
 @app.route('/', methods=['GET'])
 def webhook():
     if request.method == 'GET':
